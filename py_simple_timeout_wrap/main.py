@@ -7,7 +7,7 @@ def time_limit(timeout_sec: Optional[float]):
     def decorator(func):
         @wraps(func)
         def wrapper(*args, **kwargs):
-            with ThreadPoolExecutor() as executor:
+            with ThreadPoolExecutor(1) as executor:
                 future = executor.submit(func, *args, **kwargs)
                 failed = False
                 try:

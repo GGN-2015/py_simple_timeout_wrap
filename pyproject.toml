@@ -1,6 +1,6 @@
 [project]
 name = "py-simple-timeout-wrap"
-version = "0.1.0"
+version = "0.1.1"
 description = "A simple function execution time limit tool based on `concurrent.futures`."
 authors = [
     {name = "GGN_2015",email = "neko@jlulug.org"}

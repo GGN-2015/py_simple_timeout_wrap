@@ -13,7 +13,7 @@ from py_simple_timeout_wrap import time_limit
 import time
 
 # Set function max execution time to 1 second
-@time_limit(1)
+@time_limit(1.0)
 def task_1():
     time.sleep(0.5)
     return "task_1: done"
@@ -22,7 +22,7 @@ def task_1():
 print(task_1()) # Output: task_1: done
 
 # Set function max execution time to 1 second
-@time_limit(1)
+@time_limit(1.0)
 def task_2():
     time.sleep(1.5)
     return "task_2: done"
